@@ -156,10 +156,14 @@ footer {
     }
     
 /* Mobile layout */
-@media (max-width: 768px) {
-  nav ul {
+@media only screen  
+and (min-device-width : 300px) 
+and (max-device-width : 600px) 
+and (min-resolution: 180dpi)  {
+  
+  /*nav ul {
     display: none; }
-
+*/
   nav li {
     display: block;
      }
@@ -170,4 +174,9 @@ footer {
     }
 
   #menu-icon {
-    display: block; } }
+    display: block; } 
+
+#section1 {
+  background-image: url(../images/fietsen.jpg);
+  min-height: 40%;
+  padding-top: 200px; } }
